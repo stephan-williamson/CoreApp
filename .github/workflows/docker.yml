@@ -9,4 +9,4 @@ jobs:
       - uses:  actions/checkout@v4
       - name:  docker build csharp
         run:  |
-          docker build -t coreapp:debug -f CoreApp/Dockerfile .
+          docker build -t coreapp:debug -f Dockerfile .
