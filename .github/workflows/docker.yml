@@ -18,4 +18,5 @@ jobs:
           docker build -t coreapp:debug -f Dockerfile .
       - name:  docker push
         run:  |
+          docker tag coreapp:debug tastykibbles/coreapp:debug
           docker push tastykibbles/coreapp:debug
